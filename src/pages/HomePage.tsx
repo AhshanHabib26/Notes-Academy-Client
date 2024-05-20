@@ -1,8 +1,11 @@
+import NHBanner from "../components/ui/NHBanner";
+import Container from "../utils/Container";
+
 const HomePage = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <Container>
+      <NHBanner/>
+    </Container>
   );
 };
 
