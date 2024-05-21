@@ -25,3 +25,22 @@ export type TCategory = {
 export type TCategoryProps = {
   category: TCategory;
 };
+
+export type TBook = {
+  id: string;
+  title: string;
+  author: string;
+  publicationDate: string;
+  price: number;
+  offerPrice?: number;
+  genre: string;
+  pages: number;
+  publisher?: string;
+  isbn: string;
+  description?: string;
+  coverImageUrl?: string;
+};
+
+export type TBookProps = {
+  book: TBook;
+};
