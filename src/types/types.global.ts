@@ -44,3 +44,17 @@ export type TBook = {
 export type TBookProps = {
   book: TBook;
 };
+
+export type TCourse = {
+  id: string;
+  title: string;
+  description: string;
+  instructor: string;
+  image: string;
+  price: string;
+  duration: string;
+  level: string;
+  category: string;
+  rating: number;
+  ratingCount: number;
+};

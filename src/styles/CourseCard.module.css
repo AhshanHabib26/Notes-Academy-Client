@@ -1,0 +1,26 @@
+.NHCourseCardContainer {
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.NHCourseCardContainer:hover {
+  box-shadow: rgb(252, 168, 168) 0px 5px 15px;
+}
+
+.NHCourseImg {
+  transition: 0.5s ease-in-out;
+}
+
+.NHCourseCardContainer:hover .NHCourseImg {
+  opacity: 1;
+  transform: scale(1.0868);
+}
+
+.NHLevel {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.NHLevel h1 {
+  background-color: #fc4f4f;
+  border-top-right-radius: 5px;
+}
