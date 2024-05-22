@@ -74,3 +74,19 @@ export type TService = {
 export type TServiceProps = {
   service: TService;
 };
+
+export type TBlog = {
+  id: string;
+  title: string;
+  author: string;
+  date: string;
+  content: string;
+  tags: string[];
+  likes: number;
+  comments: number;
+  image: string;
+  type: string;
+};
+export type TBlogProps = {
+  blog: TBlog;
+};

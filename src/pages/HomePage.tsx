@@ -1,3 +1,4 @@
+import Blog from "../components/ui/Blog";
 import Books from "../components/ui/Books";
 import Categories from "../components/ui/Categories";
 import Courses from "../components/ui/Courses";
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Books />
       <Courses />
       <Package />
+      <Blog/>
     </Container>
   );
 };
