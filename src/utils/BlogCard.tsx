@@ -17,11 +17,9 @@ const BlogCard: React.FC<TBlogProps> = ({ blog }) => {
         }`}
       >
         <img
-          className={`w-full ${
-            blog.id === "1"
-              ? "rounded-lg h-[300px]"
-              : "w-[150px] h-[100px] rounded-lg"
-          } `}
+          className={`rounded-lg ${
+            blog.id === "1" ? "w-full !h-[300px]" : "!w-[120px] !h-[100px]"
+          }`}
           src={blog.image}
           alt={blog.title}
         />
