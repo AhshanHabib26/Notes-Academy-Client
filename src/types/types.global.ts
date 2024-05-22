@@ -58,3 +58,7 @@ export type TCourse = {
   rating: number;
   ratingCount: number;
 };
+
+export type TCourseProps = {
+  course: TCourse;
+};

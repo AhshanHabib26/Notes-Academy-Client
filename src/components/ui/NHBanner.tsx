@@ -1,5 +1,6 @@
 import NHLink from "../../utils/NHLink";
 import netlifyImg from "../../assets/images/netlify.jpg";
+import typescriptImg from "../../assets/images/typescript.jpeg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -62,7 +63,7 @@ const NHBanner = () => {
               <div className="mt-6 lg:mt-0">
                 <img
                   className={`${Styles.NHBannerImg} w-[450px] h-[350px] rounded-lg object-center`}
-                  src={netlifyImg}
+                  src={typescriptImg}
                   alt=""
                 />
               </div>

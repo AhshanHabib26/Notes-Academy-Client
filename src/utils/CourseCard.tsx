@@ -1,4 +1,4 @@
-import { TCourse } from "../types/types.global";
+import { TCourseProps } from "../types/types.global";
 import Styles from "../styles/CourseCard.module.css";
 import {
   FaCartPlus,
@@ -11,11 +11,9 @@ import { IoPricetags } from "react-icons/io5";
 import { CiBookmarkCheck } from "react-icons/ci";
 import { toast } from "sonner";
 
-interface ICourseProps {
-  course: TCourse;
-}
 
-const CourseCard: React.FC<ICourseProps> = ({ course }) => {
+
+const CourseCard: React.FC<TCourseProps> = ({ course }) => {
   const handleClick = () => {
     toast.info("Hey! Please wait a couple of days for the update.");
   };
