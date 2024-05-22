@@ -62,3 +62,15 @@ export type TCourse = {
 export type TCourseProps = {
   course: TCourse;
 };
+
+export type TService = {
+  id: string;
+  title: string;
+  price: string;
+  offerPrice: string;
+  altTitle: string;
+  service: string[];
+};
+export type TServiceProps = {
+  service: TService;
+};
