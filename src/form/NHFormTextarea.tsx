@@ -1,13 +1,20 @@
 import { Controller, useFormContext } from "react-hook-form";
 
-type TInputProps = {
+type TTextareaProps = {
   name: string;
-  type?: string;
+  cols?: number;
+  rows?: number;
   placeholder?: string;
   required?: boolean;
 };
 
-const NHFormInput = ({ name, placeholder, type, required }: TInputProps) => {
+const NHFormTextarea = ({
+  name,
+  placeholder,
+  cols,
+  rows,
+  required,
+}: TTextareaProps) => {
   const { control } = useFormContext();
 
   return (
@@ -15,17 +22,17 @@ const NHFormInput = ({ name, placeholder, type, required }: TInputProps) => {
       control={control}
       name={name}
       render={({ field }) => (
-        <input
+        <textarea
           {...field}
-          type={type}
           placeholder={placeholder}
           required={required}
-          autoComplete="off"
-          className="w-full h-[50px] border border-gray-300 text-[#001D25] text-lg hind-siliguri-regular outline-none mb-3 rounded-md p-2"
+          cols={cols}
+          rows={rows}
+          className="w-full border outline-none rounded-md p-2 border-gray-300 text-[#001D25] text-lg hind-siliguri-regular resize-none"
         />
       )}
     />
   );
 };
 
-export default NHFormInput;
+export default NHFormTextarea;

@@ -1,4 +1,3 @@
-
 import {
   FieldValues,
   FormProvider,
@@ -16,7 +15,8 @@ const NHFormProvider = ({ children, onSubmit }: TFormProps) => {
 
   const submit: SubmitHandler<FieldValues> = (data) => {
     onSubmit(data);
-    console.log(data);
+    methods.reset();
+    console.log(data)
   };
 
   return (
