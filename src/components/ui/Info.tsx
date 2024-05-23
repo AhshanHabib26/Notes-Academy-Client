@@ -3,10 +3,8 @@ import Styles from "../../styles/Info.module.css";
 
 const Info = () => {
   return (
-    <div
-      className={`${Styles.InfoContainer} mt-20 py-20 lg:py-24 text-center`}
-    >
-      <h1 className="text-4xl hind-siliguri-bold text-white">
+    <div className={`${Styles.InfoContainer} mt-20 py-20 lg:py-24 text-center`}>
+      <h1 className="text-3xl lg:text-4xl hind-siliguri-bold text-white mx-2">
         নিজের শেখা নিজেই গুছিয়ে নেয়ার যাত্রা শুরু হোক
       </h1>
       <Link
