@@ -6,8 +6,8 @@ const FooterCopyright = () => {
 
   return (
     <div className="text-white flex items-center justify-center">
-      <FaRegCopyright size={16} />
-      <p className="text-lg hind-siliguri-light ml-1">
+      <FaRegCopyright size={14} />
+      <p className="text-md hind-siliguri-light ml-1">
         {fullYear} All rights reserved by{" "}
         <a
           target="_blank"

@@ -85,19 +85,19 @@ const TopMainNav = () => {
                       </Link>
                       <Link
                         className="text-lg poppins-light mt-1 cursor-pointer hover:text-[#F56565] block"
-                        to="/courses"
+                        to="/"
                       >
                         Courses
                       </Link>
                       <Link
                         className="text-lg poppins-light mt-1 cursor-pointer hover:text-[#F56565] block"
-                        to="/blogs"
+                        to="/"
                       >
                         Blogs
                       </Link>
                       <Link
                         className="text-lg poppins-light mt-1 cursor-pointer hover:text-[#F56565] block"
-                        to="/contact-us"
+                        to="/"
                       >
                         Contact Us
                       </Link>
