@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import { TServiceProps } from "../types/types.global";
 import { packageIconGeneretor } from "./PackageIconGeneretor";
+import { toast } from "sonner";
 
 const PackageCard: React.FC<TServiceProps> = ({ service }) => {
+  const handleClick = () => {
+    toast.info("Hey! Please wait a couple of days for the update.");
+  };
+
   return (
     <div className=" shadow-md">
       <h1
@@ -51,6 +56,7 @@ const PackageCard: React.FC<TServiceProps> = ({ service }) => {
       <div className="mt-2">
         {service?.altTitle === "Basic" ? (
           <Link
+            onClick={() => handleClick()}
             className="bg-orange-500 inline-block w-full text-center text-xl hind-siliguri-regular text-white p-2"
             to="/"
           >
@@ -58,6 +64,7 @@ const PackageCard: React.FC<TServiceProps> = ({ service }) => {
           </Link>
         ) : service?.altTitle === "Plus" ? (
           <Link
+            onClick={() => handleClick()}
             className="bg-[#FC4F4F] inline-block w-full text-center text-xl hind-siliguri-regular text-white p-2"
             to="/"
           >
@@ -65,6 +72,7 @@ const PackageCard: React.FC<TServiceProps> = ({ service }) => {
           </Link>
         ) : (
           <Link
+            onClick={() => handleClick()}
             className="bg-green-500 inline-block w-full text-center text-xl hind-siliguri-regular text-white p-2"
             to="/"
           >

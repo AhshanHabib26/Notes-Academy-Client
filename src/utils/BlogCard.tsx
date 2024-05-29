@@ -49,7 +49,7 @@ const BlogCard: React.FC<TBlogProps> = ({ blog }) => {
             </div>
             <div>
               {blog.type === "premium" ? (
-                <p>Premium content</p>
+                <p>Premium</p>
               ) : (
                 <Link
                   to=""
