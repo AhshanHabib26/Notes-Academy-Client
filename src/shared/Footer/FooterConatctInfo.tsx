@@ -8,6 +8,7 @@ import {
 import { MdMail } from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const FooterConatctInfo = () => {
   return (
@@ -50,9 +51,9 @@ const FooterConatctInfo = () => {
         <a target="_blank" href="https://leetcode.com/u/AhshanHabib/">
           <FaLaptopCode size={22} />
         </a>
-        <a target="_blank" href="">
+        <Link to="/">
           <IoLogoYoutube size={22} />
-        </a>
+        </Link>
       </div>
     </div>
   );
